@@ -1,0 +1,31 @@
+{
+  description = "A very basic flake";
+
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+  };
+
+  outputs = {
+    self,
+    nixpkgs,
+  }: let
+    system = "x86_64-linux";
+    pkgs = import nixpkgs {
+      inherit system;
+      config = {allowUnfree = true;};
+    };
+  in {
+    devShells.${system}.default = pkgs.mkShell {
+      packages = with pkgs; [
+        jdk17
+        gradle_8
+        chromium
+        chromedriver
+      ];
+      shellHook = ''
+        export SHELL="/run/current-system/sw/bin/bash"
+      '';
+        # export PATH=$PATH:${pkgs.chromedriver}/bin
+    };
+  };
+}

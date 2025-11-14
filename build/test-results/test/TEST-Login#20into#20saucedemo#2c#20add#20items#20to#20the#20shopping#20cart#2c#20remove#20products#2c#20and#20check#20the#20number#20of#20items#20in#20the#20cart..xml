@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login into saucedemo, add items to the shopping cart, remove products, and check the number of items in the cart." tests="4" skipped="0" failures="4" errors="0" timestamp="2025-11-14T21:08:46.180Z" hostname="nixos" time="0.732">
+  <properties/>
+  <testcase name="Login into the Saucedemo store." classname="Login into saucedemo, add items to the shopping cart, remove products, and check the number of items in the cart." time="0.485">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'I am on the Saucedemo login page' and 2 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;I am on the Saucedemo login page&quot;)&#10;public void iAmOnTheSaucedemoLoginPage() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I enter my valid credentials&quot;)&#10;public void iEnterMyValidCredentials() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;I can access the Saucedemo store&quot;)&#10;public void iCanAccessTheSaucedemoStore() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'I am on the Saucedemo login page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I am on the Saucedemo login page&quot;)
+public void iAmOnTheSaucedemoLoginPage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I enter my valid credentials&quot;)
+public void iEnterMyValidCredentials() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I can access the Saucedemo store&quot;)
+public void iCanAccessTheSaucedemoStore() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <testcase name="Add products to the shopping cart." classname="Login into saucedemo, add items to the shopping cart, remove products, and check the number of items in the cart." time="0.098">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'I am logged into the Saucedemo store' and 2 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;I am logged into the Saucedemo store&quot;)&#10;public void iAmLoggedIntoTheSaucedemoStore() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I select a product to add to the cart&quot;)&#10;public void iSelectAProductToAddToTheCart() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;I can see the product in my shopping cart&quot;)&#10;public void iCanSeeTheProductInMyShoppingCart() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'I am logged into the Saucedemo store' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I am logged into the Saucedemo store&quot;)
+public void iAmLoggedIntoTheSaucedemoStore() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select a product to add to the cart&quot;)
+public void iSelectAProductToAddToTheCart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I can see the product in my shopping cart&quot;)
+public void iCanSeeTheProductInMyShoppingCart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <testcase name="Remove products from the shopping cart." classname="Login into saucedemo, add items to the shopping cart, remove products, and check the number of items in the cart." time="0.084">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'I have products in my shopping cart' and 2 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;I have products in my shopping cart&quot;)&#10;public void iHaveProductsInMyShoppingCart() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I remove a product from the cart&quot;)&#10;public void iRemoveAProductFromTheCart() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;I can see that the product is no longer in my shopping cart&quot;)&#10;public void iCanSeeThatTheProductIsNoLongerInMyShoppingCart() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'I have products in my shopping cart' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I have products in my shopping cart&quot;)
+public void iHaveProductsInMyShoppingCart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I remove a product from the cart&quot;)
+public void iRemoveAProductFromTheCart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I can see that the product is no longer in my shopping cart&quot;)
+public void iCanSeeThatTheProductIsNoLongerInMyShoppingCart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <testcase name="Fail to login into the Saucedemo store due to invalid credentials." classname="Login into saucedemo, add items to the shopping cart, remove products, and check the number of items in the cart." time="0.061">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'I am on the Saucedemo login page' and 2 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;I am on the Saucedemo login page&quot;)&#10;public void iAmOnTheSaucedemoLoginPage() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I enter invalid credentials&quot;)&#10;public void iEnterInvalidCredentials() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;I can see an error message and I cannot access the store&quot;)&#10;public void iCanSeeAnErrorMessageAndICannotAccessTheStore() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'I am on the Saucedemo login page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I am on the Saucedemo login page&quot;)
+public void iAmOnTheSaucedemoLoginPage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I enter invalid credentials&quot;)
+public void iEnterInvalidCredentials() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I can see an error message and I cannot access the store&quot;)
+public void iCanSeeAnErrorMessageAndICannotAccessTheStore() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login into the Saucedemo store.(login-into-saucedemo--add-items-to-the-shopping-cart--remove-products--and-check-the-number-of-items-in-the-cart.;login-into-the-saucedemo-store.)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - ?[96m
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Login into the Saucedemo store.
+-----------------------------------------------------------------------------?[0m
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Add products to the shopping cart.(login-into-saucedemo--add-items-to-the-shopping-cart--remove-products--and-check-the-number-of-items-in-the-cart.;add-products-to-the-shopping-cart.)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - ?[96m
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Add products to the shopping cart.
+-----------------------------------------------------------------------------?[0m
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Remove products from the shopping cart.(login-into-saucedemo--add-items-to-the-shopping-cart--remove-products--and-check-the-number-of-items-in-the-cart.;remove-products-from-the-shopping-cart.)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - ?[96m
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Remove products from the shopping cart.
+-----------------------------------------------------------------------------?[0m
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Fail to login into the Saucedemo store due to invalid credentials.(login-into-saucedemo--add-items-to-the-shopping-cart--remove-products--and-check-the-number-of-items-in-the-cart.;fail-to-login-into-the-saucedemo-store-due-to-invalid-credentials.)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - ?[96m
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Fail to login into the Saucedemo store due to invalid credentials.
+-----------------------------------------------------------------------------?[0m
+]]></system-err>
+</testsuite>
