@@ -17,7 +17,7 @@
   in {
     devShells.${system}.default = pkgs.mkShell {
       packages = with pkgs; [
-        jdk17
+        jdk21
         gradle_8
         chromium
         chromedriver
