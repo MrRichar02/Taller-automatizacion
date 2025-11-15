@@ -67,12 +67,14 @@ public class LoginStepDefinition {
 	public void iCanSeeAnErrorMessageAndICannotAccessTheStore() {
 		GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.failureLonin(),
 				Matchers.containsString("Epic sadface: Username and password do not match any user in this service")));
+		WaitTime.putWaitTimeOf(2000);
 	}
 
 	@Then("I can access the Saucedemo store")
 	public void iCanAccessTheSaucedemoStore() {
 		GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.succesfulLonin(),
 				Matchers.containsString("Products")));
+		WaitTime.putWaitTimeOf(2000);
 	}
 	
 }
