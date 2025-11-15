@@ -9,7 +9,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
 public class ShoppingStepDefinition {
-
+    /*
 	// @Before
 	// public void config() {
 	// 	student.can(BrowseTheWeb.with(theDriver));
@@ -48,7 +48,7 @@ public class ShoppingStepDefinition {
 	public void iCanSeeThatTheProductIsNoLongerInMyShoppingCart() {
 		// Write code here that turns the phrase above into concrete actions
 		throw new io.cucumber.java.PendingException();
-	}
+	} */
 
 
 }

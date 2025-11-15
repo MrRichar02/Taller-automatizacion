@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features/sauceDemo.feature",
-        glue = "co.edu.saucedemo.stepdefinitions",
+        glue = "co.edu.saucedemo.Comprar.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class RunnerSauceLogin {}

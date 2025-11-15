@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">4</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.728s</div>
+<div class="counter">28.319s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="percent">50%</div>
 <p>successful</p>
 </div>
 </td>
@@ -67,6 +67,9 @@
 <a href="#">Tests</a>
 </li>
 <li>
+<a href="#">Standard output</a>
+</li>
+<li>
 <a href="#">Standard error</a>
 </li>
 </ul>
@@ -76,7 +79,7 @@
 <a name="Add products to the shopping cart."></a>
 <h3 class="failures">Add products to the shopping cart.</h3>
 <span class="code">
-<pre>io.cucumber.junit.UndefinedStepException: The step 'I am logged into the Saucedemo store' and 2 other step(s) are undefined.
+<pre id="test-message-Add products to the shopping cart.">io.cucumber.junit.UndefinedStepException: The step 'I am logged into the Saucedemo store' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
 @Given(&quot;I am logged into the Saucedemo store&quot;)
@@ -96,65 +99,14 @@ public void iCanSeeTheProductInMyShoppingCart() {
 }
 
 </pre>
-</span>
-</div>
-<div class="test">
-<a name="Fail to login into the Saucedemo store due to invalid credentials."></a>
-<h3 class="failures">Fail to login into the Saucedemo store due to invalid credentials.</h3>
-<span class="code">
-<pre>io.cucumber.junit.UndefinedStepException: The step 'I am on the Saucedemo login page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I am on the Saucedemo login page&quot;)
-public void iAmOnTheSaucedemoLoginPage() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I enter invalid credentials&quot;)
-public void iEnterInvalidCredentials() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I can see an error message and I cannot access the store&quot;)
-public void iCanSeeAnErrorMessageAndICannotAccessTheStore() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Login into the Saucedemo store."></a>
-<h3 class="failures">Login into the Saucedemo store.</h3>
-<span class="code">
-<pre>io.cucumber.junit.UndefinedStepException: The step 'I am on the Saucedemo login page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I am on the Saucedemo login page&quot;)
-public void iAmOnTheSaucedemoLoginPage() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I enter my valid credentials&quot;)
-public void iEnterMyValidCredentials() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I can access the Saucedemo store&quot;)
-public void iCanAccessTheSaucedemoStore() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="test-message-Add products to the shopping cart.">Copy</button>
 </span>
 </div>
 <div class="test">
 <a name="Remove products from the shopping cart."></a>
 <h3 class="failures">Remove products from the shopping cart.</h3>
 <span class="code">
-<pre>io.cucumber.junit.UndefinedStepException: The step 'I have products in my shopping cart' and 2 other step(s) are undefined.
+<pre id="test-message-Remove products from the shopping cart.">io.cucumber.junit.UndefinedStepException: The step 'I have products in my shopping cart' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
 @Given(&quot;I have products in my shopping cart&quot;)
@@ -174,6 +126,7 @@ public void iCanSeeThatTheProductIsNoLongerInMyShoppingCart() {
 }
 
 </pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="test-message-Remove products from the shopping cart.">Copy</button>
 </span>
 </div>
 </div>
@@ -189,30 +142,39 @@ public void iCanSeeThatTheProductIsNoLongerInMyShoppingCart() {
 </thead>
 <tr>
 <td class="failures">Add products to the shopping cart.</td>
-<td class="failures">0.098s</td>
+<td class="failures">0.121s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="failures">Fail to login into the Saucedemo store due to invalid credentials.</td>
-<td class="failures">0.061s</td>
-<td class="failures">failed</td>
+<td class="success">Fail to login into the Saucedemo store due to invalid credentials.</td>
+<td class="success">12.971s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Login into the Saucedemo store.</td>
-<td class="failures">0.485s</td>
-<td class="failures">failed</td>
+<td class="success">Login into the Saucedemo store.</td>
+<td class="success">15.146s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">Remove products from the shopping cart.</td>
-<td class="failures">0.084s</td>
+<td class="failures">0.081s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
 </div>
 <div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre id="class-stdout">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; TEXTO EN PANTALLA: Products
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; TEXTO EN PANTALLA: Epic sadface: Username and password do not match any user in this service
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="class-stdout">Copy</button>
+</span>
+</div>
+<div class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] INFO  - 
+<pre id="class-stderr">[Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
@@ -220,14 +182,20 @@ public void iCanSeeThatTheProductIsNoLongerInMyShoppingCart() {
 
 Login into the Saucedemo store.(login-into-saucedemo--add-items-to-the-shopping-cart--remove-products--and-check-the-number-of-items-in-the-cart.;login-into-the-saucedemo-store.)
 --------------------------------------------------------------------------------
-[Test worker] INFO  - ?[96m
-  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
- |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
-   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
-   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors, \r\n                   --di..., --disable-default-apps, --disable-extensions-file-a..., \r\n                   --in..., --disable-infobars,--disabl..., --remote-allow-origins=*], extensions: []}}
+nov 15, 2025 2:28:16 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 142
+nov 15, 2025 2:28:16 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 142.0.7444.61. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 Login into the Saucedemo store.
------------------------------------------------------------------------------?[0m
+----------------------------------------------------------------------?[0m
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
@@ -268,15 +236,16 @@ Remove products from the shopping cart.
 
 Fail to login into the Saucedemo store due to invalid credentials.(login-into-saucedemo--add-items-to-the-shopping-cart--remove-products--and-check-the-number-of-items-in-the-cart.;fail-to-login-into-the-saucedemo-store-due-to-invalid-credentials.)
 --------------------------------------------------------------------------------
-[Test worker] INFO  - ?[96m
-  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
- |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
-   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
-   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 Fail to login into the Saucedemo store due to invalid credentials.
------------------------------------------------------------------------------?[0m
+----------------------------------------------------------------------?[0m
 </pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="class-stderr">Copy</button>
 </span>
 </div>
 </div>
@@ -287,7 +256,7 @@ Fail to login into the Saucedemo store due to invalid credentials.
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14.3</a> at Nov 14, 2025, 4:08:47 PM</p>
+<a href="https://www.gradle.org">Gradle 9.2.0</a> at 15 nov 2025 14:28:40</p>
 </div>
 </div>
 </body>
