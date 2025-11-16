@@ -9,4 +9,7 @@ public class SouceDemoPage extends PageObject {
     public static final Target LINK_TO_LOGIN =Target.the("Link to loggin").locatedBy("//*[@id=\"login-button\"]");
     public static final Target SAUCEDEMO_TITLE =Target.the("show products").locatedBy("//*[@id=\"header_container\"]/div[2]/span");
     public static final Target FAILURE_LOGIN =Target.the("Message the invalid credentials").locatedBy("//*[@id=\"login_button_container\"]/div/form/div[3]/h3");
+    public static final Target ADD_BOTTOM =Target.the("Bottom to add the backpack product").locatedBy("//*[@id='add-to-cart-sauce-labs-backpack']");
+    public static final Target REMOVE_BOTTOM =Target.the("Bottom to remove the backpack product").locatedBy("//*[@id='remove-sauce-labs-backpack']");
+    public static final Target SHOPPING_CART =Target.the("Icon with text that indicates items in cart").locatedBy("//*[@id='shopping_cart_container']/a");
 }

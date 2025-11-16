@@ -5,8 +5,11 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.targets.Target;
 
+import static co.edu.saucedemo.Comprar.userinterfaces.SouceDemoPage.ADD_BOTTOM;
 import static co.edu.saucedemo.Comprar.userinterfaces.SouceDemoPage.FAILURE_LOGIN;
+import static co.edu.saucedemo.Comprar.userinterfaces.SouceDemoPage.REMOVE_BOTTOM;
 import static co.edu.saucedemo.Comprar.userinterfaces.SouceDemoPage.SAUCEDEMO_TITLE;
+import static co.edu.saucedemo.Comprar.userinterfaces.SouceDemoPage.SHOPPING_CART;
 
 public class ValidationFor implements Question<String> {
 
@@ -28,4 +31,16 @@ public class ValidationFor implements Question<String> {
     public static ValidationFor failureLonin(){
         return new ValidationFor(FAILURE_LOGIN);
     }
+
+		public static ValidationFor addProductBottom(){
+			return new ValidationFor(REMOVE_BOTTOM);
+		}
+
+		public static ValidationFor removeProductBottom(){
+			return new ValidationFor(ADD_BOTTOM);
+		}
+
+		public static ValidationFor shoppingCart(){
+			return new ValidationFor(SHOPPING_CART);
+		}
 }
