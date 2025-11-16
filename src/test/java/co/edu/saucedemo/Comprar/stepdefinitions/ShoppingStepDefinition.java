@@ -27,7 +27,7 @@ public class ShoppingStepDefinition {
 	public final Actor client = Actor.named("Ricardo");
 	private static final Client VALID_USER = Client.withCredentials("standard_user", "secret_sauce");
 
-	@Managed(driver = "chrome", uniqueSession = true)
+	@Managed(driver = "chrome", uniqueSession = false)
 	public WebDriver theDriver;
 
 	@Before
@@ -55,7 +55,7 @@ public class ShoppingStepDefinition {
 
 	@Given("I have products in my shopping cart")
 	public void iHaveProductsInMyShoppingCart() {
-		client.attemptsTo(OpenThe.sauceDemoPage(new SouceDemoPage()), LoginInto.credentials(VALID_USER));
+		client.attemptsTo(OpenThe.sauceDemoPage(new SouceDemoPage()), LoginInto.credentials(VALID_USER), AddThe.backpack());
 		WaitTime.putWaitTimeOf(2000);
 	}
 	@When("I remove a product from the cart")
