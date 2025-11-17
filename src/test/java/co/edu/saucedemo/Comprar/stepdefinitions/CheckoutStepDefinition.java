@@ -1,14 +1,12 @@
 package co.edu.saucedemo.Comprar.stepdefinitions;
 
-import co.edu.saucedemo.Comprar.models.Client;
 import co.edu.saucedemo.Comprar.questions.ValidationFor;
-import co.edu.saucedemo.Comprar.tasks.LoginInto;
+import co.edu.saucedemo.Comprar.tasks.*;
 import co.edu.saucedemo.Comprar.utils.WaitTime;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
-
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.GivenWhenThen;
@@ -19,10 +17,10 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
 
-import com.fasterxml.jackson.databind.deser.DataFormatReaders.Match;
-
-import co.edu.saucedemo.Comprar.tasks.OpenThe;
 import co.edu.saucedemo.Comprar.userinterfaces.SouceDemoPage;
+
+import static co.edu.saucedemo.Comprar.utils.Util.SECONDS;
+import static co.edu.saucedemo.Comprar.utils.Util.VALID_USER;
 
 public class CheckoutStepDefinition {
 
@@ -38,15 +36,27 @@ public class CheckoutStepDefinition {
 	OnStage.theActorCalled("user");
 	}
 
+	@Given("I have products in my shopping cart")
+	public void iHaveProductsInMyShoppingCart() {
+		client.attemptsTo(OpenThe.sauceDemoPage(new SouceDemoPage()), LoginInto.credentials(VALID_USER));
+		WaitTime.putWaitTimeOf(SECONDS);
+		client.attemptsTo(AddThe.backpack());
+		WaitTime.putWaitTimeOf(SECONDS);
+	}
+
 	@When("I checkout my products")
 	public void iCheckoutMyProducts() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+        client.attemptsTo(GoTo.theShoppingCart());
+        WaitTime.putWaitTimeOf(SECONDS);
+        client.attemptsTo(GoTo.checkOut());
+        WaitTime.putWaitTimeOf(SECONDS);
 	}
 	@When("I enter my personal information")
 	public void iEnterMyPersonalInformation() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+        client.attemptsTo(CheckOutInto.clientPersonalInformation(VALID_USER));
+        WaitTime.putWaitTimeOf(SECONDS);
+        client.attemptsTo(GoTo.finishShopping());
+        WaitTime.putWaitTimeOf(SECONDS);
 	}
 
 	@When("I don't enter my personal information")
@@ -63,8 +73,8 @@ public class CheckoutStepDefinition {
 
 	@Then("I can see a message which says that my order has been dispatched")
 	public void iCanSeeAMessageWhichSaysThatMyOrderHasBeenDispatched() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+        GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.succesfulShopping(), Matchers.containsString("Thank you for your order!")));
+        WaitTime.putWaitTimeOf(SECONDS);
 	}
 
 }

@@ -24,4 +24,7 @@ public class SelectThe implements Interaction {
 		return Tasks.instrumented(SelectThe.class, bottom);
 	}
 
+	public static SelectThe sauceDemoCart(Target bottom){
+		return Tasks.instrumented(SelectThe.class, bottom);
+	}
 }

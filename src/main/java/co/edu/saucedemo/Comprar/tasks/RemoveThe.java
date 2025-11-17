@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 
+
 public class RemoveThe implements Task {
 
 	@Override
@@ -18,5 +19,5 @@ public class RemoveThe implements Task {
 	public static RemoveThe backpack() {
 		return Tasks.instrumented(RemoveThe.class);
 	}
-	
+
 }

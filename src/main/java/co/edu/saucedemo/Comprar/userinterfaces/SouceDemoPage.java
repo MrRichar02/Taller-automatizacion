@@ -12,4 +12,13 @@ public class SouceDemoPage extends PageObject {
     public static final Target ADD_BOTTOM =Target.the("Bottom to add the backpack product").locatedBy("//*[@id='add-to-cart-sauce-labs-backpack']");
     public static final Target REMOVE_BOTTOM =Target.the("Bottom to remove the backpack product").locatedBy("//*[@id='remove-sauce-labs-backpack']");
     public static final Target SHOPPING_CART =Target.the("Icon with text that indicates items in cart").locatedBy("//*[@id='shopping_cart_container']/a");
+
+    public static final Target SHOPPING_CART_BOTTOM =Target.the("Icon with text that indicates items in cart").locatedBy("//*[@id=\"shopping_cart_container\"]");
+    public static final Target CHECKOUT_BOTTOM =Target.the("Bottom to sheckout").locatedBy("//*[@id=\"checkout\"]");
+    public static final Target INPUT_NAME =Target.the("Text Box name").locatedBy("//*[@id=\"first-name\"]");
+    public static final Target INPUT_LASTNAME =Target.the("Text Box last name").locatedBy("//*[@id=\"last-name\"]");
+    public static final Target INPUT_POSTCODE =Target.the("Text Box post code").locatedBy("//*[@id=\"postal-code\"]");
+    public static final Target CHECKOUT_CONTINUE_BOTTOM =Target.the("Botton to continue with the chopping").locatedBy("//*[@id=\"continue\"]");
+    public static final Target FINISH_SHOPPING_BOTTOM =Target.the("Botton to continue with the chopping").locatedBy("//*[@id=\"finish\"]");
+    public static final Target SUCCESFUL_SHOPPING_TITLE =Target.the("show products").locatedBy("//*[@id=\"checkout_complete_container\"]/h2");
 }

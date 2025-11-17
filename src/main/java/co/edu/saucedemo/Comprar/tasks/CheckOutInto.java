@@ -1,26 +1,25 @@
 package co.edu.saucedemo.Comprar.tasks;
 
-import co.edu.saucedemo.Comprar.interactions.LoginEnterThe;
+import co.edu.saucedemo.Comprar.interactions.CheckOutEnterThe;
 import co.edu.saucedemo.Comprar.models.Client;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 
-public class LoginInto implements Task {
-
+public class CheckOutInto implements Task {
     private final Client client;
 
-    public LoginInto(Client client) {
+    public CheckOutInto(Client client) {
         this.client = client;
     }
 
     @Override
     public <T extends Actor> void performAs(T actor){
-        actor.attemptsTo(LoginEnterThe.credentials(client));
+        actor.attemptsTo(CheckOutEnterThe.clientPersobalInformation(client));
     }
 
-    public static LoginInto credentials(Client client){
-        return Tasks.instrumented(LoginInto.class, client);
+    public static CheckOutInto clientPersonalInformation(Client client){
+        return Tasks.instrumented(CheckOutInto.class, client);
     }
 
 }

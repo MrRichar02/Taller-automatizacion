@@ -13,6 +13,7 @@ public class  OpenThe implements Task {
     public OpenThe(PageObject page) {
         this.page = page;
     }
+
     @Override
     public <T extends  Actor> void performAs(T actor){
 
@@ -22,4 +23,5 @@ public class  OpenThe implements Task {
     public static OpenThe sauceDemoPage(PageObject page){
         return Tasks.instrumented(OpenThe.class, page);
     }
+
 }

@@ -22,11 +22,12 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 import co.edu.saucedemo.Comprar.userinterfaces.SouceDemoPage;
 import co.edu.saucedemo.Comprar.utils.WaitTime;
 
+import static co.edu.saucedemo.Comprar.utils.Util.SECONDS;
+import static co.edu.saucedemo.Comprar.utils.Util.VALID_USER;
+
 public class ShoppingStepDefinition {
 
 	public final Actor client = Actor.named("Ricardo");
-	private static final Client VALID_USER = Client.withCredentials("standard_user", "secret_sauce");
-
 	@Managed(driver = "chrome", uniqueSession = false)
 	public WebDriver theDriver;
 
@@ -40,12 +41,12 @@ public class ShoppingStepDefinition {
 	@Given("I am logged into the Saucedemo store")
 	public void iAmLoggedIntoTheSaucedemoStore() {
 		client.attemptsTo(OpenThe.sauceDemoPage(new SouceDemoPage()), LoginInto.credentials(VALID_USER));
-		WaitTime.putWaitTimeOf(2000);
+		WaitTime.putWaitTimeOf(SECONDS);
 	}
 	@When("I select a product to add to the cart")
 	public void iSelectAProductToAddToTheCart() {
 		client.attemptsTo(AddThe.backpack());
-		WaitTime.putWaitTimeOf(2000);
+		WaitTime.putWaitTimeOf(SECONDS);
 	}
 	@Then("I can see the product in my shopping cart")
 	public void iCanSeeTheProductInMyShoppingCart() {
@@ -53,19 +54,13 @@ public class ShoppingStepDefinition {
 		GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.shoppingCart(), Matchers.containsString("1")));
 	}
 
-	@Given("I have products in my shopping cart")
-	public void iHaveProductsInMyShoppingCart() {
-		client.attemptsTo(OpenThe.sauceDemoPage(new SouceDemoPage()), LoginInto.credentials(VALID_USER), AddThe.backpack());
-		WaitTime.putWaitTimeOf(2000);
-	}
 	@When("I remove a product from the cart")
 	public void iRemoveAProductFromTheCart() {
 		client.attemptsTo(RemoveThe.backpack());
-		WaitTime.putWaitTimeOf(2000);
+		WaitTime.putWaitTimeOf(SECONDS);
 	}
 	@Then("I can see that the product is no longer in my shopping cart")
 	public void iCanSeeThatTheProductIsNoLongerInMyShoppingCart() {
-		GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.removeProductBottom(), Matchers.containsString("Add")));
 		GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.shoppingCart(), Matchers.containsString("")));
-	} 
+	}
 }

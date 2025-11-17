@@ -10,9 +10,9 @@ import net.serenitybdd.screenplay.actions.Enter;
 
 import static co.edu.saucedemo.Comprar.userinterfaces.SouceDemoPage.*;
 
-public class EnterThe implements Interaction {
+public class LoginEnterThe implements Interaction {
     private final Client client;
-    public EnterThe(Client client) {
+    public LoginEnterThe(Client client) {
         this.client = client;
     }
 
@@ -25,7 +25,8 @@ public class EnterThe implements Interaction {
         actor.attemptsTo(Click.on(LINK_TO_LOGIN));
     }
 
-    public static EnterThe credentials(Client client) {
-        return Tasks.instrumented(EnterThe.class, client);
+    public static LoginEnterThe credentials(Client client) {
+        return Tasks.instrumented(LoginEnterThe.class, client);
     }
+
 }

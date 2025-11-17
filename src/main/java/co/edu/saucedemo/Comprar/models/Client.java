@@ -8,10 +8,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Client {
+    private String name;
+    private String lastname;
+    private String postcode;
     private String username;
     private String password;
 
-    public static Client withCredentials(String username, String password) {
-        return new Client(username, password);
+    public static Client withCredentials(String name, String lastname, String postcode, String username, String password) {
+        return new Client(name,lastname,postcode,username, password);
     }
+
 }
