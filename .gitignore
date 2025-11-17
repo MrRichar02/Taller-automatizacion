@@ -26,3 +26,6 @@ serenity/*
 .classpath
 .factorypath
 .settings/
+
+# direnv
+.direnv/

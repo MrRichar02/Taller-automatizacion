@@ -68,8 +68,8 @@ public class CheckoutStepDefinition {
 
 	@Then("I can see an error message which says that my personal information is required")
 	public void iCanSeeAnErrorMessageWhichSaysThatMyPersonalInformationIsRequired() {
-    GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.succesfulShopping(), Matchers.containsString("Error")));
-    GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.succesfulShopping(), Matchers.containsString("is required")));
+    GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.unSuccesfulShopping(), Matchers.containsString("Error")));
+    GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.unSuccesfulShopping(), Matchers.containsString("is required")));
 	}
 
 	@Then("I can see a message which says that my order has been dispatched")
