@@ -21,4 +21,5 @@ public class SouceDemoPage extends PageObject {
     public static final Target CHECKOUT_CONTINUE_BOTTOM =Target.the("Botton to continue with the chopping").locatedBy("//*[@id=\"continue\"]");
     public static final Target FINISH_SHOPPING_BOTTOM =Target.the("Botton to continue with the chopping").locatedBy("//*[@id=\"finish\"]");
     public static final Target SUCCESFUL_SHOPPING_TITLE =Target.the("show products").locatedBy("//*[@id=\"checkout_complete_container\"]/h2");
+    public static final Target FAILURE_CHEKOUT =Target.the("Message for invalid checkout").locatedBy("//*[@id='checkout_info_container']/div/form/div[1]/div[4]");
 }

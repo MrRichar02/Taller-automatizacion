@@ -43,4 +43,8 @@ public class ValidationFor implements Question<String> {
     public static ValidationFor succesfulShopping(){
         return new ValidationFor(SUCCESFUL_SHOPPING_TITLE);
     }
+
+    public static ValidationFor unSuccesfulShopping(){
+        return new ValidationFor(FAILURE_CHEKOUT);
+    }
 }

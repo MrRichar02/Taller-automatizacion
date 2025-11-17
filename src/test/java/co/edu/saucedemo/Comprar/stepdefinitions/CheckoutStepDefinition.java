@@ -61,14 +61,15 @@ public class CheckoutStepDefinition {
 
 	@When("I don't enter my personal information")
 	public void iDonTEnterMyPersonalInformation() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		WaitTime.putWaitTimeOf(SECONDS);
+		client.attemptsTo(WronglyCheckoutInto.personalInformation());
+		WaitTime.putWaitTimeOf(SECONDS);
 	}
 
 	@Then("I can see an error message which says that my personal information is required")
 	public void iCanSeeAnErrorMessageWhichSaysThatMyPersonalInformationIsRequired() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+    GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.succesfulShopping(), Matchers.containsString("Error")));
+    GivenWhenThen.then(client).should(GivenWhenThen.seeThat(ValidationFor.succesfulShopping(), Matchers.containsString("is required")));
 	}
 
 	@Then("I can see a message which says that my order has been dispatched")
