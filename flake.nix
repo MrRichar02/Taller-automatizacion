@@ -22,10 +22,9 @@
         chromium
         chromedriver
       ];
-      shellHook = ''
-        export SHELL="/run/current-system/sw/bin/bash"
-      '';
-        # export PATH=$PATH:${pkgs.chromedriver}/bin
+      # shellHook = ''
+      #   export SHELL="/run/current-system/sw/bin/bash"
+      # '';
     };
   };
 }

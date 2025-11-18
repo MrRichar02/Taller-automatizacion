@@ -7,8 +7,9 @@ buildscript {
 plugins {
 	id 'io.github.jumosqu12.screenplayarchitecture' version '2.0.1'
 	id 'java'
-    id 'eclipse'
-    id 'idea'
+	id 'eclipse'
+	id 'idea'
+	id("net.serenity-bdd.serenity-gradle-plugin") version "4.3.2"
 }
 
 group 'co.edu.saucedemo'
