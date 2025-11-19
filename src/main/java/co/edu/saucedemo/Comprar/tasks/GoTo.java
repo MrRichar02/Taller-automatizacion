@@ -1,6 +1,5 @@
 package co.edu.saucedemo.Comprar.tasks;
 
-import co.edu.saucedemo.Comprar.interactions.SelectThe;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;

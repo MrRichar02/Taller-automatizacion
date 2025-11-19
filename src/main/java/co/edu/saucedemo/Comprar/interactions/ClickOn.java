@@ -6,11 +6,11 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.targets.Target;
 
-public class SelectThe implements Interaction {
+public class ClickOn implements Interaction {
 
 	private final Target bottom;
 
-	public SelectThe(Target bottom) {
+	public ClickOn(Target bottom) {
 		this.bottom = bottom;
 	}
 
@@ -20,15 +20,8 @@ public class SelectThe implements Interaction {
 		actor.attemptsTo(Click.on(bottom));
 	}
 
-	public static SelectThe backPack(Target bottom){
-		return Tasks.instrumented(SelectThe.class, bottom);
+	public static ClickOn the(Target bottom){
+		return Tasks.instrumented(ClickOn.class, bottom);
 	}
 
-	public static SelectThe sauceDemoCart(Target bottom){
-		return Tasks.instrumented(SelectThe.class, bottom);
-	}
-
-	public static SelectThe continueCheckout(Target bottom){
-		return Tasks.instrumented(SelectThe.class, bottom);
-	}
 }
